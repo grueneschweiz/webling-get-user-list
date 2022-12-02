@@ -146,7 +146,7 @@ def run_export(filename: str):
 
         current_user += 1
 
-    with open(filename, 'x', newline='') as file:
+    with open(filename, 'w', newline='') as file:
         writer = csv.writer(file)
         writer.writerows(data)
 
